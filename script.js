@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(ans2==="")
         {
             alert("PLEASE ENTER EXPRESSION");
+            return;
         }
         let rank=0;
         for(let i=0;i<ans2.length;i++)
@@ -162,6 +163,11 @@ document.addEventListener("DOMContentLoaded", function() {
          submit3.addEventListener("click", () => {
          
              let txt = texta3.value.trim();
+             if(txt=="")
+             {
+                alert("PLEASE ENTER VALID EXPRESSION");
+                return;
+             }
              function check_precedence(a) {
                  if (a === '+' || a === '-')
                      return 1;
@@ -239,6 +245,11 @@ submit4.addEventListener("click", () => {
 
     let text = texta4.value.trim();
     let txt = "";
+    if(txt=="")
+    {
+        alert("PLEASE ENTER EXPRESSION");
+        return;
+    }
     for (let i = text.length-1; i>=0; i--) {
         if (text[i] == '(')
             txt += ")";
