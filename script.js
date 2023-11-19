@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
                          ans += stack.pop();
                          rnk -= 1;
                      }
-                     stack.pop(); // Remove the '(' from the stack
+                     stack.pop(); 
                  } else {
                      while (stack.length != 0 && check_precedence(stack[stack.length - 1]) >= check_precedence(txt[i])) {
                          ans += stack.pop();
@@ -197,14 +197,14 @@ document.addEventListener("DOMContentLoaded", function() {
                      stack.push(txt[i]);
                  }
          
-                 // Check the rank after processing each character
+                 
                  if (rnk < 1 && ans !== "") {
                      alert("ENTERED EXPRESSION IS INCORRECT");
                      return;
                  }
              }
          
-             // Empty the stack after processing the entire string
+             
              while (stack.length != 0) {
                  if (stack[stack.length - 1] == '(') {
                      alert("ENTERED EXPRESSION IS INCORRECT");
