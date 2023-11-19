@@ -46,7 +46,7 @@ div[id^="divi"] {
     justify-content: center; /* Center items vertically */
 }
 h2{
-    font-family:cursive;
+    font-family:'Courier New', Courier, monospace;
 }
 
 textarea {
