@@ -245,7 +245,7 @@ submit4.addEventListener("click", () => {
 
     let text = texta4.value.trim();
     let txt = "";
-    if(txt=="")
+    if(text==="")
     {
         alert("PLEASE ENTER EXPRESSION");
         return;
