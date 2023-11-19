@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.heading{
+    display:flex;
+    font-style:italic;
+    font-size:xx-large;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2%;
+   
+    /* webkit-background-clip: text; */
+  color: rgb(244, 237, 237);
+    
+}
+label {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+div[id^="divi"] {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+h2{
+    font-family:cursive;
+}
+
+textarea {
+    width: 60%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally within the textarea */
+    align-items: center; /* Center the content vertically within the textarea */
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: rgb(8, 50, 94);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    div[id^="divi"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    textarea {
+        height: 100px;
+    }
+}
